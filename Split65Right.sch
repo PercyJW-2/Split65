@@ -44,10 +44,8 @@ Wire Wire Line
 Connection ~ 1050 1500
 Wire Wire Line
 	1050 1500 850  1500
-Text GLabel 1200 1400 0    50   Input ~ 0
-DATA
 Text GLabel 1200 1300 0    50   Input ~ 0
-LED
+DATA
 Text GLabel 1200 1700 0    50   Input ~ 0
 SDA
 Text GLabel 1200 1800 0    50   Input ~ 0
@@ -84,14 +82,12 @@ Wire Wire Line
 	3800 1600 3800 1400
 Text GLabel 4500 1250 0    50   Input ~ 0
 SDA
-Text GLabel 4500 1400 0    50   Input ~ 0
-SCL
 $Comp
 L Device:R R1
 U 1 1 5F7942F0
 P 4650 1250
 F 0 "R1" V 4550 1250 50  0000 C CNN
-F 1 "R" V 4650 1250 50  0000 C CNN
+F 1 "5k" V 4650 1250 50  0000 C CNN
 F 2 "footprints:R_1608_axial" V 4580 1250 50  0001 C CNN
 F 3 "~" H 4650 1250 50  0001 C CNN
 	1    4650 1250
@@ -100,13 +96,13 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F79541D
-P 4650 1400
-F 0 "R2" V 4750 1400 50  0000 C CNN
-F 1 "R" V 4650 1400 50  0000 C CNN
-F 2 "footprints:R_1608_axial" V 4580 1400 50  0001 C CNN
-F 3 "~" H 4650 1400 50  0001 C CNN
-	1    4650 1400
-	0    1    1    0   
+P 6250 1750
+F 0 "R2" V 6350 1750 50  0000 C CNN
+F 1 "5k" V 6250 1750 50  0000 C CNN
+F 2 "footprints:R_1608_axial" V 6180 1750 50  0001 C CNN
+F 3 "~" H 6250 1750 50  0001 C CNN
+	1    6250 1750
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3V3 #PWR0104
@@ -122,13 +118,13 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 5F796502
-P 4800 1400
-F 0 "#PWR0105" H 4800 1250 50  0001 C CNN
-F 1 "+3V3" V 4815 1528 50  0000 L CNN
-F 2 "" H 4800 1400 50  0001 C CNN
-F 3 "" H 4800 1400 50  0001 C CNN
-	1    4800 1400
-	0    1    1    0   
+P 6250 1900
+F 0 "#PWR0105" H 6250 1750 50  0001 C CNN
+F 1 "+3V3" V 6265 2028 50  0000 L CNN
+F 2 "" H 6250 1900 50  0001 C CNN
+F 3 "" H 6250 1900 50  0001 C CNN
+	1    6250 1900
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:AudioJack4 J1
@@ -163,33 +159,18 @@ F 3 "" H 6450 1250 50  0001 C CNN
 	1    6450 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5F79AB96
-P 6850 1600
-F 0 "JP1" H 6850 1864 50  0000 C CNN
-F 1 "Jumper" H 6850 1773 50  0000 C CNN
-F 2 "footprints:jumper_data" H 6850 1600 50  0001 C CNN
-F 3 "~" H 6850 1600 50  0001 C CNN
-	1    6850 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 1300 6550 1300
 Wire Wire Line
-	6550 1300 6550 1250
-Wire Wire Line
-	5850 1600 6350 1600
+	5850 1600 6250 1600
 Wire Wire Line
 	6550 1900 6350 1900
 Wire Wire Line
 	6350 1900 6350 1600
 Connection ~ 6350 1600
-Wire Wire Line
-	6350 1600 6550 1600
 Text GLabel 7150 1600 2    50   Input ~ 0
 DATA
-Text GLabel 7150 1250 2    50   Input ~ 0
+Text GLabel 7150 1300 2    50   Input ~ 0
 SDA
 Text GLabel 7150 1900 2    50   Input ~ 0
 SCL
@@ -295,12 +276,12 @@ $EndComp
 $Comp
 L keyboard_parts:Jumper JP2
 U 1 1 5F78F78F
-P 6850 1250
-F 0 "JP2" H 6850 1450 50  0000 C CNN
-F 1 "Jumper" H 6850 1359 50  0000 C CNN
-F 2 "footprints:Jumper" H 6850 1250 50  0001 C CNN
-F 3 "" H 6850 1250 50  0001 C CNN
-	1    6850 1250
+P 6850 1300
+F 0 "JP2" H 6850 1500 50  0000 C CNN
+F 1 "Jumper" H 6850 1409 50  0000 C CNN
+F 2 "footprints:Jumper" H 6850 1300 50  0001 C CNN
+F 3 "" H 6850 1300 50  0001 C CNN
+	1    6850 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1435,4 +1416,23 @@ NoConn ~ 1200 3400
 NoConn ~ 1200 3300
 NoConn ~ 1200 3200
 NoConn ~ 1200 2750
+NoConn ~ 1200 1400
+Connection ~ 6250 1600
+Wire Wire Line
+	6250 1600 6350 1600
+$Comp
+L Device:R R3
+U 1 1 5F7AC61F
+P 6850 1600
+F 0 "R3" V 6950 1600 50  0000 C CNN
+F 1 "120" V 6850 1600 50  0000 C CNN
+F 2 "footprints:R_1608_axial" V 6780 1600 50  0001 C CNN
+F 3 "~" H 6850 1600 50  0001 C CNN
+	1    6850 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 1600 7000 1600
+Wire Wire Line
+	6350 1600 6700 1600
 $EndSCHEMATC
