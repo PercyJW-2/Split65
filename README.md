@@ -10,5 +10,5 @@ Split 65 Percent Keyboard
 ## Images
 ### Left 
 <img src="https://i.imgur.com/6TQmdJk.png">  
-###Right 
+### Right 
 <img src="https://i.imgur.com/u5480U5.png">  
