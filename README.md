@@ -15,6 +15,7 @@ Split 65 Percent Keyboard
   - R3 needs to be shorted
 - when using I2C
   - R1 and R2 need to be populated with an apropriate Resistor
+  - both jumpers need to be shorted
 
 ## Images
 ### Left
