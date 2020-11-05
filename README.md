@@ -8,5 +8,5 @@ Split 65 Percent Keyboard
 - I2C support (not implemented in QMK-Port)
 
 ## Images
-Left [](https://imgur.com/6TQmdJk) 
-Right [](https://imgur.com/u5480U5) 
+Left ![](https://imgur.com/6TQmdJk)  
+Right ![](https://imgur.com/u5480U5)  
