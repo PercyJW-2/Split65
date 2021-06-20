@@ -18,7 +18,7 @@ Split 65 Percent Keyboard
   - both jumpers need to be shorted
 
 ## Images
-<img src="https://cdn.discordapp.com/attachments/279185858152759296/856144614691569704/IMG_20210620_141150.jpg">
+<img src="https://i.imgur.com/rWzYMgW.jpg">
 
 ### Left
 <img src="https://i.imgur.com/6TQmdJk.png">
