@@ -3,7 +3,7 @@ Split 65 Percent Keyboard
 
 ## Features
 - ProMicro and Proton C support
-- QMK Port (WIP)
+- QMK Port
 - Hot-Swap
 - I2C support (not implemented in QMK-Port)
 
